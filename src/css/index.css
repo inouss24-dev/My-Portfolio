@@ -41,10 +41,7 @@ body {
     margin-left: 1rem;
     color: #fff;
 }
-.navbar .navbar-right img {
-    width: 65px;
-    display: none;
-}
+
 .navbar .navbar-right a:hover{
     color: var(--bleu);
 }
