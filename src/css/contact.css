@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root {
+    --bleu: rgb(30, 84, 245);
+    --dark: rgb(11, 10, 10);
+}
+
+body {
+    padding: 2rem 80px 2rem 80px;
+    font-family: 'poppins', sans-serif;
+    background-color: var(--dark);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar .navbar-left {
+    width: 50%;
+}
+.navbar .navbar-left a {
+    color: #fff;
+    font-size: 2rem;
+}
+.navbar .navbar-left span {
+    color: var(--bleu);
+}
+.navbar .navbar-right {
+    width: 50%;
+}
+.navbar .navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.navbar .navbar-right a {
+    margin-left: 1rem;
+    color: #fff;
+}
+.navbar .navbar-right a:hover{
+    color: var(--bleu);
+}
+.meRecruter {
+    background-color: var(--bleu);
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    width: 125px;
+    padding: 9px;
+}
+.navbar .navbar-right .meRecruter:hover {
+    background-color:  rgba(30, 84, 245, 0.916);
+    color: #fff;
+}
+
+section {
+    margin-top: 3rem;
+    display: flex;
+}
+section .section-left {
+    width: 55%;
+}
+section .section-right {
+    width: 45%;
+}
+
+.section-left form {
+    margin-top: 2rem;
+    border-radius: 10px;
+    background-color: gray;
+}
+
+.section-left form .title {
+    font-size: 28px;
+    color: var(--bleu);
+    margin-left: 15px;
+    padding-top: 10px;
+}
+
+.section-left form .titles {
+    color: #fff;
+    margin-bottom: 1rem;
+    margin-left: 15px;
+}
+
+.section-left form .input-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.section-left form .input-container input {
+    width: 260px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 1rem;
+    margin-left: 15px;
+    outline: none;
+    background-color: var(--dark);
+    color: #fff;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.section-left form .select-container {
+    width: 100%;
+    margin-top: 1rem;
+
+}
+
+.section-left form .select-container select {
+    width: 535px;
+    margin-left: 15px;
+    height: 50px;
+    color: #fff;
+    background-color: var(--dark);
+    border-radius: 10px;
+    outline: none;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.section-left form .text-container {
+    width: 100%;
+    margin-top: 1rem;
+}
+.section-left form .text-container textarea {
+    margin-left: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--dark);
+    outline: none;
+    width: 570px;
+    height: 179px;
+    resize: none;
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    display: flex;
+    text-wrap: wrap;
+    font-weight: bold;
+    
+}
+
+
+.section-left form .btn-container {
+    margin-top: 1rem;
+}
+.section-left form .btn-container button {
+    margin-left: 15px;
+    margin-bottom: 10px;
+    background-color: var(--bleu);
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    width: 130px;
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+
+}
+
+section .section-right .otherContainer {
+    margin-left: 120px;
+    display: flex;
+    margin-top: 100px;
+
+}
+section .section-right .otherContainer i {
+    color: var(--bleu);
+}
+
+section .section-right .otherContainer .logo {
+    background-color: rgba(128, 128, 128, 0.454);
+    width: 80px;
+    height: 80px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+section .section-right .otherContainer .informationAbout {
+    margin-left: 10px;
+}
+.informationAbout p {
+    margin-top: 10px;
+    color: #fff;
+}

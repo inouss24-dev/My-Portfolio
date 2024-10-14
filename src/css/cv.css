@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root {
+    --bleu: rgb(30, 84, 245);
+    --dark: rgb(11, 10, 10);
+}
+
+body {
+    padding: 2rem 80px 2rem 80px;
+    font-family: 'poppins', sans-serif;
+    background-color: var(--dark);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar .navbar-left {
+    width: 50%;
+}
+.navbar .navbar-left a {
+    color: #fff;
+    font-size: 2rem;
+}
+.navbar .navbar-left span {
+    color: var(--bleu);
+}
+.navbar .navbar-right {
+    width: 50%;
+}
+.navbar .navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.navbar .navbar-right a {
+    margin-left: 1rem;
+    color: #fff;
+}
+.navbar .navbar-right a:hover{
+    color: var(--bleu);
+}
+.meRecruter {
+    background-color: var(--bleu);
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    width: 125px;
+    padding: 9px;
+}
+.navbar .navbar-right .meRecruter:hover {
+    background-color:  rgba(30, 84, 245, 0.916);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    margin-top: 2.5rem;
+}
+.container .container-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .container-right {
+    width: 70%;
+    padding-left: 30px;
+}
+
+.container .container-left button {
+    width: 290px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'poppins';
+    margin-top: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--bleu);
+    color: #fff;
+}
+.container .container-right h1 {
+    color: #fff;
+    margin-top: 1rem;
+    margin-left: 24px;
+}
+
+.carousel-container-education{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.carousel-education {
+    margin-top: 1rem;
+    background-color: gray;
+    padding: 10px 0px 10px 30px;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.carousel-container-education .carousel-education .date {
+    color: #fff;
+}
+
+.carousel-container-education .carousel-education .poste {
+    font-size: 20px;
+    color: #fff;
+}
+
+
+.carousel-container-education .carousel-education .status {
+    margin-top: 2rem;
+    color: #fff;
+}
+
+
+.carousel-container-competences{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carousel-competences {
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    background-color: gray;
+    padding: 10px 0px;
+    border-radius: 10px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+
+}
+.carousel-competences img {
+    width: 60%;
+    opacity: 60%;
+}
+
+.carousel-container-infos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.carousel-infos {
+    margin-top: 1rem;
+    background-color: none;
+    padding: 10px 10px;
+    width: 650px;
+    display: flex;
+    color: #fff;
+}
+
+.carousel-infos-left {
+    width: 50%;
+    background-color: gray;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+
+}
+.carousel-infos-left i {
+    width:10px;
+    color: var(--bleu);
+}
+
+.carousel-infos-right {
+    width: 50%;
+    background-color: gray;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-left: 5rem;
+
+
+}
+
+
+.carousel-infos-right i {
+    width:10px;
+    color: var(--bleu);
+}

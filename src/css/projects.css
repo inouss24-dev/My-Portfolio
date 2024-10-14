@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root {
+    --bleu: rgb(30, 84, 245);
+    --dark: rgb(11, 10, 10);
+}
+
+body {
+    padding: 2rem 80px 2rem 80px;
+    font-family: 'poppins', sans-serif;
+    background-color: var(--dark);
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar .navbar-left {
+    width: 50%;
+}
+.navbar .navbar-left a {
+    color: #fff;
+    font-size: 2rem;
+}
+.navbar .navbar-left span {
+    color: var(--bleu);
+}
+.navbar .navbar-right {
+    width: 50%;
+}
+.navbar .navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.navbar .navbar-right a {
+    margin-left: 1rem;
+    color: #fff;
+}
+.navbar .navbar-right a:hover{
+    color: var(--bleu);
+}
+.meRecruter {
+    background-color: var(--bleu);
+    color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    width: 125px;
+    padding: 9px;
+}
+.navbar .navbar-right .meRecruter:hover {
+    background-color:  rgba(30, 84, 245, 0.916);
+    color: #fff;
+}
