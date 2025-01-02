@@ -13,9 +13,9 @@ const Home = () => {
             je suis étudiant en développement web.<br />
             Contactez-moi si vous avez besoin de mes services.
         </p>
-        <a href="#" className="btn bg-[#efff16] text-[#000] md:w-fit hover:shadow-2xl hover:scale-105 transition-all duration-300">
+        <a href="mailto:mrinouss24@gmail.com?subject=Meeting" className="btn bg-[#efff16] text-[#000] md:w-fit hover:shadow-2xl hover:scale-105 transition-all duration-300 hover:bg-[#efff16]" target="blank">
             <IoMailUnreadSharp className="w-5 h-5 text-[#000]"/>
-            Contactez-moi
+            Contactez-moi 
         </a>
       </div>
       <div className="md:ml-60">
