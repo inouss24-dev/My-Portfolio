@@ -44,6 +44,9 @@ const Contact = () => {
                 <option>Faire un partenariat</option>
               </select>
             </div>
+            <button className="btn bg-[#efff16] hover:bg-[#efff16] text-[#000] w-52 md:w-32">
+                Envoyer
+            </button>
           </div>
         </div>
       </div>
