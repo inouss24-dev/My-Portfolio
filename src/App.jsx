@@ -4,6 +4,8 @@ import About from "./components/About"
 import Skill from "./components/Skill"
 import Project from "./components/Project"
 import Footer from "./components/Footer"
+import { Link } from 'react-router-dom';
+
 
 
 function App() {

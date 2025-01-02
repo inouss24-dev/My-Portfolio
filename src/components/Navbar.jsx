@@ -1,5 +1,6 @@
 import { LuAppWindow } from "react-icons/lu";
 
+
 const Navbar = () => {
   return (
     <div className=" flex justify-center md:justify-between items-center p-4 text-[#ffff] " id="navbar">
