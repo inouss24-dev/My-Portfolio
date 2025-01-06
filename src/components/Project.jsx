@@ -55,8 +55,8 @@ const project = [
     description:
       "Plonnger dans le monde du calcul avec cette outils",
     image: Calculator,
-    demo: "#",
-    gitHub: "#",
+    demo: "https://calculator-react-theta-one.vercel.app/",
+    gitHub: "https://github.com/inouss24-dev/calculator-react",
     technologies: ["React", "Tailwind"],
   },  
 ];
