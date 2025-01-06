@@ -2,6 +2,7 @@ import Quiz from "../../public/Quiz App.png";
 import TodoList from "../../public/Todo List.png";
 import WeatherApp from "../../public/Weather App.png";
 import MyPortfolio from "../../public/Portfolio.png";
+import Calculator from "../../public/Calculator-react.png"
 import { FaPlay } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
@@ -45,6 +46,16 @@ const project = [
       "Mon Portfolio un espace qui fait ma biographie",
     image: MyPortfolio,
     demo: "#navbar",
+    gitHub: "#",
+    technologies: ["React", "Tailwind"],
+  },
+  {
+    id: 5,
+    title: "Great Calculator",
+    description:
+      "Plonnger dans le monde du calcul avec cette outils",
+    image: Calculator,
+    demo: "#",
     gitHub: "#",
     technologies: ["React", "Tailwind"],
   },  
