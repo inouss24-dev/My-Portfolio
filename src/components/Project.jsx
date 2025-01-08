@@ -3,6 +3,7 @@ import TodoList from "../../public/Todo List.png";
 import WeatherApp from "../../public/Weather App.png";
 import MyPortfolio from "../../public/Portfolio.png";
 import Calculator from "../../public/Calculator-react.png";
+import KicksCoin from "../../public/Calculator-react.png";
 import { FaPlay } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
@@ -53,6 +54,15 @@ const project = [
     image: Calculator,
     demo: "https://calculator-react-theta-one.vercel.app/",
     gitHub: "https://github.com/inouss24-dev/calculator-react",
+    technologies: ["React", "Tailwind"],
+  },
+  {
+    id: 6,
+    title: "Kicks Coin",
+    description: "Une application qui permet de rechercher une cryptomonnaie et d'afficher son rang, son prix actuel et d'autres informations clés.",
+    image: KicksCoin,
+    demo: "https://kicks-coin.vercel.app/",
+    gitHub: "https://github.com/inouss24-dev/kicks-coin",
     technologies: ["React", "Tailwind"],
   },
 ];
