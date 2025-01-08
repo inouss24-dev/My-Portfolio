@@ -3,7 +3,7 @@ import TodoList from "../../public/Todo List.png";
 import WeatherApp from "../../public/Weather App.png";
 import MyPortfolio from "../../public/Portfolio.png";
 import Calculator from "../../public/Calculator-react.png";
-import KicksCoin from "../../public/Calculator-react.png";
+import KicksCoin from "../../public/Kicks Coin.png";
 import { FaPlay } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 
