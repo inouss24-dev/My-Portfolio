@@ -24,8 +24,8 @@ const project = [
     description:
       "Une Application Web qui permet de géger ses taches quotidiennes.",
     image: TodoList,
-    demo: "#",
-    gitHub: "#",
+    demo: "https://react-todo-list-plum-one.vercel.app/",
+    gitHub: "https://github.com/inouss24-dev/react-todo-list",
     technologies: ["React", "Tailwind"],
   },
   {
