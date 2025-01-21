@@ -4,11 +4,12 @@ import WeatherApp from "../../public/Weather App.png";
 import KicksCoin from "../../public/Kicks Coin.png";
 import MyPortfolio from "../../public/Portfolio.png";
 import Calculator from "../../public/Calculator-react.png";
+import LandingPage from "../../public/Landing Page.mp4";
+import DictionnaryApp from "../../public/Dictionnary App.png";
 import { FaPlay } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { GoProjectRoadmap } from "react-icons/go";
 import Footer from "../components/Footer";
-
 
 const AllProject = () => {
   const project = [
@@ -21,6 +22,7 @@ const AllProject = () => {
       demo: "https://inouss-dev-quiz-app.vercel.app/",
       gitHub: "https://github.com/inouss24-dev/Quiz-App",
       technologies: ["Html", "Css", "JavaScript"],
+      type: "image",
     },
     {
       id: 2,
@@ -31,6 +33,7 @@ const AllProject = () => {
       demo: "https://react-todo-list-plum-one.vercel.app/",
       gitHub: "https://github.com/inouss24-dev/react-todo-list",
       technologies: ["React", "Tailwind"],
+      type: "image",
     },
     {
       id: 3,
@@ -41,6 +44,7 @@ const AllProject = () => {
       demo: "https://inouss-dev-weather-app.vercel.app/",
       gitHub: "https://github.com/inouss24-dev/Weather-App",
       technologies: ["React", "Tailwind"],
+      type: "image",
     },
     {
       id: 4,
@@ -50,6 +54,7 @@ const AllProject = () => {
       demo: "#navbar",
       gitHub: "#",
       technologies: ["React", "Tailwind"],
+      type: "image",
     },
     {
       id: 5,
@@ -59,6 +64,7 @@ const AllProject = () => {
       demo: "https://calculator-react-theta-one.vercel.app/",
       gitHub: "https://github.com/inouss24-dev/calculator-react",
       technologies: ["React", "Tailwind"],
+      type: "image",
     },
     {
       id: 6,
@@ -69,6 +75,28 @@ const AllProject = () => {
       demo: "https://kicks-coin.vercel.app/",
       gitHub: "https://github.com/inouss24-dev/kicks-coin",
       technologies: ["React", "Tailwind"],
+      type: "image",
+    },
+    {
+      id: 7,
+      title: "My Dictionnary App",
+      description: "Une application qui permet de rechercher une Un mot clés.",
+      image: DictionnaryApp,
+      demo: "https://my-dictionary-app-nine.vercel.app/",
+      gitHub: "https://github.com/inouss24-dev/My-Dictionary-App",
+      technologies: ["React", "Tailwind"],
+      type: "image",
+    },
+    {
+      id: 8,
+      title: "Landing Page",
+      description:
+        "Une Landing Page Normal Pour la presentation d'une StartUp.",
+      image: LandingPage,
+      demo: "https://landing-page-1-9w45z6r9a-inouss24-devs-projects.vercel.app/",
+      gitHub: "https://github.com/inouss24-dev/Landing-Page-1",
+      technologies: ["React", "Tailwind"],
+      type: "video",
     },
   ];
   return (
@@ -86,18 +114,27 @@ const AllProject = () => {
               key={projects.id}
               className="bg-base-300 p-5 h-fit rounded-xl shadow-lg "
             >
-              <img
-                src={projects.image}
-                alt={projects.title}
-                className=" w-full rounded-xl h-full object-cover hover:scale-105 transition-all duration-300"
-              />
+              {projects.type === "video" ? (
+                <video
+                  src={projects.image}
+                  controls
+                  muted
+                  className="w-full rounded-xl h-full object-cover hover:scale-105 transition-all duration-300"
+                />
+              ) : (
+                <img
+                  src={projects.image}
+                  alt={projects.title}
+                  className="w-full rounded-xl h-full object-cover hover:scale-105 transition-all duration-300"
+                />
+              )}
               <div>
                 <h1 className="my-2 font-bold text-[#efff16] text-2xl">
                   {projects.title}
                 </h1>
-                <p className="text-base  text-white">{projects.description}</p>
+                <p className="text-base text-white">{projects.description}</p>
               </div>
-              <div className=" flex flex-wrap gap-2 my-3">
+              <div className="flex flex-wrap gap-2 my-3">
                 {projects.technologies.map((tech) => (
                   <span
                     key={tech}
@@ -107,7 +144,7 @@ const AllProject = () => {
                   </span>
                 ))}
               </div>
-              <div className=" flex gap-x-3 items-center">
+              <div className="flex gap-x-3 items-center">
                 <a
                   href={projects.demo}
                   className="btn bg-[#efff16] text-black hover:scale-105 transition-all hover:bg-[#efff16] duration-300 w-2/3"
@@ -128,7 +165,6 @@ const AllProject = () => {
         </div>
       </div>
       <Footer />
-
     </>
   );
 };
