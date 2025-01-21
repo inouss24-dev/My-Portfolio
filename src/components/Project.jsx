@@ -1,11 +1,10 @@
 import Quiz from "../../public/Quiz App.png";
 import TodoList from "../../public/Todo List.png";
 import WeatherApp from "../../public/Weather App.png";
-import MyPortfolio from "../../public/Portfolio.png";
-import Calculator from "../../public/Calculator-react.png";
-import KicksCoin from "../../public/Kicks Coin.png";
 import { FaPlay } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
+import { Link } from "react-router-dom";
+
 
 const project = [
   {
@@ -38,33 +37,33 @@ const project = [
     gitHub: "https://github.com/inouss24-dev/Weather-App",
     technologies: ["React", "Tailwind"],
   },
-  {
-    id: 4,
-    title: "My Portfolio",
-    description: "Mon Portfolio un espace qui fait ma biographie",
-    image: MyPortfolio,
-    demo: "#navbar",
-    gitHub: "#",
-    technologies: ["React", "Tailwind"],
-  },
-  {
-    id: 5,
-    title: "Great Calculator",
-    description: "Plonnger dans le monde du calcul avec cette outils",
-    image: Calculator,
-    demo: "https://calculator-react-theta-one.vercel.app/",
-    gitHub: "https://github.com/inouss24-dev/calculator-react",
-    technologies: ["React", "Tailwind"],
-  },
-  {
-    id: 6,
-    title: "Kicks Coin",
-    description: "Une application qui permet de rechercher une cryptomonnaie et d'afficher son rang, son prix actuel et d'autres informations clés.",
-    image: KicksCoin,
-    demo: "https://kicks-coin.vercel.app/",
-    gitHub: "https://github.com/inouss24-dev/kicks-coin",
-    technologies: ["React", "Tailwind"],
-  },
+  // {
+  //   id: 4,
+  //   title: "My Portfolio",
+  //   description: "Mon Portfolio un espace qui fait ma biographie",
+  //   image: MyPortfolio,
+  //   demo: "#navbar",
+  //   gitHub: "#",
+  //   technologies: ["React", "Tailwind"],
+  // },
+  // {
+  //   id: 5,
+  //   title: "Great Calculator",
+  //   description: "Plonnger dans le monde du calcul avec cette outils",
+  //   image: Calculator,
+  //   demo: "https://calculator-react-theta-one.vercel.app/",
+  //   gitHub: "https://github.com/inouss24-dev/calculator-react",
+  //   technologies: ["React", "Tailwind"],
+  // },
+  // {
+  //   id: 6,
+  //   title: "Kicks Coin",
+  //   description: "Une application qui permet de rechercher une cryptomonnaie et d'afficher son rang, son prix actuel et d'autres informations clés.",
+  //   image: KicksCoin,
+  //   demo: "https://kicks-coin.vercel.app/",
+  //   gitHub: "https://github.com/inouss24-dev/kicks-coin",
+  //   technologies: ["React", "Tailwind"],
+  // },
 ];
 
 const Project = () => {
@@ -76,7 +75,7 @@ const Project = () => {
       >
         Mes Projets
       </h1>
-      <div className="grid md:grid-cols-4 gap-4">
+      <div className="grid md:grid-cols-3 gap-4">
         {project.map((projects) => (
           <div
             key={projects.id}
@@ -121,6 +120,14 @@ const Project = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className=" flex justify-center mt-4">
+        <Link 
+          to="/all-project"
+          className="bg-[#efff16] rounded-lg p-2 text-black hover:bg-[#efff16a0]"
+        >
+          Tous Mes Projets
+        </Link>
       </div>
     </div>
   );
