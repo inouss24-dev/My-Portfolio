@@ -4,6 +4,7 @@ import imgREACT from "../assets/techno/react.png";
 import imgHTML from "../assets/techno/html.png";
 import imgNODE from "../assets/techno/node-js.png";
 import imgTAILWIND from "../assets/techno/tailwind.png";
+import imgANGULAR from "../assets/techno/Angular.png";
 
 const skills = [
   {
@@ -36,6 +37,11 @@ const skills = [
     name: "React",
     image: imgREACT,
   },
+  {
+    id: 7,
+    name: "Angular",
+    image: imgANGULAR
+  }
 ];
 const getSkillDescription = (name) => {
   const descriptions = {
