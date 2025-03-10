@@ -5,6 +5,7 @@ import imgHTML from "../assets/techno/html.png";
 import imgNODE from "../assets/techno/node-js.png";
 import imgTAILWIND from "../assets/techno/tailwind.png";
 import imgANGULAR from "../assets/techno/Angular.png";
+import imgWORDPRESS from "../assets/techno/wordpress.png";
 
 const skills = [
   {
@@ -41,6 +42,11 @@ const skills = [
     id: 7,
     name: "Angular",
     image: imgANGULAR
+  },
+  {
+    id: 8,
+    name: "Wordpress",
+    imgANGULAR: imgWORDPRESS
   }
 ];
 const getSkillDescription = (name) => {
@@ -54,6 +60,16 @@ const getSkillDescription = (name) => {
       "Node.js est une plateforme JavaScript côté serveur pour créer des applications backend.",
     React:
       "React est une bibliothèque JavaScript pour créer des interfaces utilisateur dynamiques.",
+    Angular: "Angular est un framework open-source de Google pour des applications web performantes et maintenables.",
+    Wordpress: "WordPress est un CMS open-source, facile à utiliser et personnalisable, idéal pour créer des sites web, blogs et boutiques en ligne.",
+
+
+
+
+
+
+
+
   };
   return descriptions[name] || "Description non disponible.";
 };
