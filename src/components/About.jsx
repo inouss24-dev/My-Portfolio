@@ -1,19 +1,24 @@
 import Moi from "../../public/Moi.jpeg";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div className="bg-base-300 p-10 mb-10 md:mb-32">
-      <h1 className="uppercase font-bold mb-4 text-center text-3xl text-white hover:text-[#efff16]">
+      <h1 className="uppercase font-bold  text-center text-3xl text-white hover:text-[#efff16]">
         À propos
       </h1>
       <div className="flex flex-col md:flex-row md:h-screen justify-center items-center">
-        <div className="hidden md:block md:w-1/3">
+        <motion.div className="hidden md:block md:w-1/3"
+          initial={{ translateX: "-100%" }}
+          whileInView={{ translateX: 0 }}
+          transition={{ duration: 1.5 }}
+        >
           <img
             src={Moi}
             alt="Portrait"
             className="w-96 object-cover rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
           />
-        </div>
+        </motion.div>
 
         <div className="md:ml-4 md:w-2/3 space-y-4 text-white">
           <p className="text-2xl md:text-3xl">

@@ -1,9 +1,14 @@
 import { LuAppWindow } from "react-icons/lu";
+import { motion } from "framer-motion";
 
 
 const Navbar = () => {
   return (
-    <div className=" flex justify-center md:justify-between items-center p-4 text-[#ffff] " id="navbar">
+    <motion.div className=" flex justify-center md:justify-between items-center p-4 text-[#ffff] " id="navbar"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2, ease: "easeInOut" }}
+    >
       <a href="#navbar" className=" flex items-center font-bold text-3xl md:text-xl">
         <LuAppWindow className="mr-2" />
         Inoussa
@@ -31,7 +36,7 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

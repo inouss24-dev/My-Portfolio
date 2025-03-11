@@ -4,6 +4,8 @@ import WeatherApp from "../../public/Weather App.png";
 import { FaPlay } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 
 
 const project = [

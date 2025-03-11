@@ -5,7 +5,9 @@ import imgHTML from "../assets/techno/html.png";
 import imgNODE from "../assets/techno/node-js.png";
 import imgTAILWIND from "../assets/techno/tailwind.png";
 import imgANGULAR from "../assets/techno/Angular.png";
-import imgWORDPRESS from "../assets/techno/wordpress.png";
+const  imgWORDPRESS = "https://ouch-cdn2.icons8.com/2zJeim6ImftWDi89JR97BqBuZomGxZwKZMf3a7tCG3s/rs:fit:456:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNTcz/L2Y1MjViZTgyLTNj/ZGYtNGNhMS05OWI4/LThkMTU4MzY5NmYx/Yy5wbmc.png";
+import { motion } from "framer-motion";
+
 
 const skills = [
   {
@@ -46,7 +48,7 @@ const skills = [
   {
     id: 8,
     name: "Wordpress",
-    imgANGULAR: imgWORDPRESS
+    image: imgWORDPRESS
   }
 ];
 const getSkillDescription = (name) => {
@@ -82,8 +84,14 @@ const Skill = () => {
       </h1>
       <div className="flex flex-wrap gap-5 justify-center items-center md:w-full mt-4 md:mt-0">
         {skills.map((skill) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 2, ease: "easeInOut" }}
             key={skill.id}
+            // initial={{ opacity: 0, scale: 0.8, translateY: 50 }}
+            // whileInView={{ opacity: 1, scale: 1, translateY: 0 }}
+            // transition={{ duration: 1, ease: "easeOut" }}
             className="group flex flex-col justify-center items-center bg-white rounded-lg shadow-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 p-4 md:w-56 md:h-64"
           >
             <div className="w-24 h-24 p-2 rounded-full border-2 border-[#ffff]">
@@ -101,7 +109,7 @@ const Skill = () => {
                 {getSkillDescription(skill.name)}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

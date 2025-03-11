@@ -1,12 +1,17 @@
 import { IoMailUnreadSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import Moi from "../../public/Moi.jpeg";
+import { motion } from "framer-motion";
+
 
 const Home = () => {
   return (
-    <div
+    <motion.div
       className=" flex flex-col-reverse md:flex-row justify-center items-center md:my-32 my-10"
       id="home"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 2, ease: "easeInOut" }}
     >
       <div className=" flex flex-col" id="A-propos">
         <h1 className=" text-5xl md:text-6xl font-bold text-center md:text-left mt-4 md:mt-0  text-[#ffff]">
@@ -36,7 +41,7 @@ const Home = () => {
           }}
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
